@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <section class="promo">
+        <div class="container">
+            <header class="header">
+                <a href="#" class="header__link">
+                    <img src="img/png/logo.png" alt="" class="header__logo">
+                </a>
+                <div class="header__official">Официальный представитель
+                    <span>Garmin, Polar, Suunto</span>
+                </div>
+                <div class="header__contacts">
+                    <a href="tel:74999228974" class="header__phone">+7 (499) 922-89-74</a>
+                    <button class="button">заказать звонок</button>
+                </div>
+            </header>
+            <div class="promo__wrapper">
+                <h1 class="promo__header">Подбор пульсометра</h1>
+                <h2 class="promo__subheader">с учётом Вашего уровня подготовки</h2>
+                <div class="promo__icons">
+                    <div class="promo__icon">
+                        <img src="icons/main_icon1.png" alt="">
+                        Время подбора: 10 минут
+                    </div>
+                    <div class="promo__icon">
+                        <img src="icons/main_icon2.png" alt="">
+                        Бесплатная доставка
+                    </div>
+                    <div class="promo__icon">
+                        <img src="icons/main_icon3.png" alt="">
+                        Ответим на все вопросы
+                    </div>
+                </div>
+                <button class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
+                <div class="promo__link">
+                    или <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
+            <div class="advantages__items">
+                <div class="advantages__item">
+                    <img src="icons/advantages_icon1.png" alt="" class="advantages__icon">
+                    <div class="advantages__subtitle">Делимся опытом</div>
+                    <div class="advantages__descr">
+                        Наши сотрудники всегда готовы <br>
+                        поделиться своим опытом,<br>
+                        так как сами бегают полумарафоны,<br>
+                        переплыли Босфор, готовятся к <br>
+                        соревнованиям по триатлону!
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <img src="icons/advantages_icon2.png" alt="" class="advantages__icon">
+                    <div class="advantages__subtitle">Заботимся о здоровье</div>
+                    <div class="advantages__descr">
+                        Мы работаем для того,<br>
+                        чтобы Ваши занятия спортом шли на<br>
+                        пользу Вашему здоровью и были в <br>
+                        радость Вам и Вашим близким!
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <img src="icons/advantages_icon3.png" alt="" class="advantages__icon">
+                    <div class="advantages__subtitle">Учим бегать</div>
+                    <div class="advantages__descr">
+                        Помогаем с обучением<br>
+                        правильной технике бега!<br>
+                        Дружим с крупнейшей школой бега <br>
+                        в России - <a href="#">I LOVE RUNNING</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="consultation">
+        <div class="container">
+            <div class="title title_left">
+                Получите бесплатную консультацию<br>по подбору пульсометра
+            </div>
+            <div class="consultation__descr">
+                Просто заполните форму заявки<br>и мы перезвоним вам в течении 10 минут
+            </div>
+            <form action="#" class="feed-form">
+                <input required name="name" placeholder="Ваше имя" type="text">
+                <input required name="phone" placeholder="Ваш телефон" type="number">
+                <input required name="email" placeholder="Ваш E-mail" type="email">
+                <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+    </section>
+    <section class="carousel" id="carousel">
+        <div class="container">
+            <div class="carousel__wrapper">
+                <img src="img/carousel/arrow_left.svg" alt="" class="carousel__arrow carousel__arrow-left" onclick="moveSlide('left')">
+                <div class="carousel__slides">
+                    <div class="carousel__content carousel__content-first carousel__content-active" id="carouselContent1">
+                        <img src="img/carousel/carousel_slide1.png" alt="" class="carousel__img">
+                    </div>
+                    <div class="carousel__content carousel__content-second carousel__content-right" id="carouselContent2">
+                        <img src="img/carousel/carousel_slide2.png" alt="" class="carousel__img">
+                    </div>
+                    <div class="carousel__content carousel__content-last carousel__content-left" id="carouselContent3">
+                        <img src="img/carousel/carousel_slide3.png" alt="" class="carousel__img">
+                    </div>
+                </div>
+                <img src="img/carousel/arrow_right.svg" alt="" class="carousel__arrow carousel__arrow-right" onclick="moveSlide('right')">
+            </div>
+        </div>
+    </section>
+    <section class="catalog">
+        <div class="container">
+            <div class="catalog__title">
+                
+            </div>
+        </div>
+    </section>
+    <script src="js/carousel.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
