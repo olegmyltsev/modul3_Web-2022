@@ -14,11 +14,17 @@ for (let consultationButtonsCount = 0; consultationButtonsCount < getConsultatio
     })
 
 }
-getOverlay.addEventListener("click",function () {
-    getOverlay.style.display = "none"
-    getAllModal[0].style.display = "none"
-    getAllModal[1].style.display = "none"
-    getAllModal[2].style.display = "none"
+getOverlay.addEventListener("click", function (event) {
+    if (event.composedPath().includes(getAllModal[0])
+        || event.composedPath().includes(getAllModal[1])
+        || event.composedPath().includes(getAllModal[2])) {
+            return false
+    } else {
+        getOverlay.style.display = "none"
+        getAllModal[0].style.display = "none"
+        getAllModal[1].style.display = "none"
+        getAllModal[2].style.display = "none"
+    }
 })
 for (let hideButtonsCount = 0; hideButtonsCount < getCloseModal.length; hideButtonsCount++) {
     getCloseModal[hideButtonsCount].addEventListener("click", function () {
