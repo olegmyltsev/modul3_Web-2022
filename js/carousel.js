@@ -5,9 +5,10 @@ const left = "carousel__content-left";
 let slide = 0
 let slideRight;
 let slideLeft;
+const getCarousel = document.getElementById("carousel")
 function moveSlide(direction) {
     document.getElementById("carousel").style.pointerEvents = "none"
-    setTimeout(function(){document.getElementById("carousel").style.pointerEvents = "auto"},500)
+    setTimeout(function () { document.getElementById("carousel").style.pointerEvents = "auto" }, 500)
     if (direction == "right") {
         slide++
         if (slide == 3) { slide = 0 }
@@ -46,3 +47,22 @@ function moveSlide(direction) {
     getCarouselContent[slideLeft].classList.add(left)
     getCarouselContent[slideLeft].classList.remove(right, active)
 }
+
+
+let touchStart
+let touchEnd
+getCarousel.addEventListener("touchstart", function (event) {
+    touchStart = Math.floor(event.touches[0].clientX)
+    console.log(touchStart);
+})
+getCarousel.addEventListener("touchend", function (event) {
+    touchEnd = Math.floor(event.changedTouches[0].clientX)
+    console.log(touchEnd);
+    if (touchEnd - touchStart > 100) {
+        moveSlide('left')
+    }
+    if (touchEnd - touchStart < -100) {
+        moveSlide('right')
+    }
+})
+
