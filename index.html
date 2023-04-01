@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
-    <section class="promo">
+<body >
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__link">
@@ -52,7 +53,7 @@
         <div class="container">
             <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
             <div class="advantages__items">
-                <div class="advantages__item">
+                <div class="advantages__item wow animate__animated animate__zoomIn ">
                     <img src="icons/advantages_icon1.png" alt="" class="advantages__icon">
                     <div class="advantages__subtitle">Делимся опытом</div>
                     <div class="advantages__descr">
@@ -63,7 +64,7 @@
                         соревнованиям по триатлону!
                     </div>
                 </div>
-                <div class="advantages__item">
+                <div data-wow-delay="100ms"   class="advantages__item wow animate__animated animate__zoomIn">
                     <img src="icons/advantages_icon2.png" alt="" class="advantages__icon">
                     <div class="advantages__subtitle">Заботимся о здоровье</div>
                     <div class="advantages__descr">
@@ -73,7 +74,7 @@
                         радость Вам и Вашим близким!
                     </div>
                 </div>
-                <div class="advantages__item">
+                <div data-wow-delay="200ms"  class="advantages__item wow animate__animated animate__zoomIn">
                     <img src="icons/advantages_icon3.png" alt="" class="advantages__icon">
                     <div class="advantages__subtitle">Учим бегать</div>
                     <div class="advantages__descr">
@@ -95,10 +96,10 @@
                 Просто заполните форму заявки<br>и мы перезвоним вам в течении 10 минут
             </div>
             <form action="#" class="form">
-                <input required name="name" placeholder="Ваше имя" type="text">
-                <input required name="phone" placeholder="Ваш телефон" type="number">
-                <input required name="email" placeholder="Ваш E-mail" type="email">
-                <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+                <input  class="wow animate__animated animate__lightSpeedInLeft" required name="name" placeholder="Ваше имя" type="text">
+                <input data-wow-delay="150ms"  class="wow animate__animated animate__lightSpeedInRight" required name="phone" placeholder="Ваш телефон" type="number">
+                <input data-wow-delay="300ms" class="wow animate__animated animate__lightSpeedInLeft" required name="email" placeholder="Ваш E-mail" type="email">
+                <button data-wow-delay="450ms" class="button button_submit wow animate__animated animate__lightSpeedInRight">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
     </section>
@@ -140,7 +141,7 @@
                 </li>
             </ul>
             <div class="catalog__cards catalog__cards-fitness catalog__cards-active">
-                <div class="catalog__card">
+                <div data-wow-delay="100ms" class="catalog__card animate__fadeInUp animate__animated wow">
                     <div class="catalog__card-content">
                         <img src="img/png/card_img.png" alt="" class="catalog__card-img">
                         <div class="catalog__card-title">Пульсометр Polar FT1</div>
@@ -183,7 +184,7 @@
                         <div class="button button_catalog-card" data-modal="order">купить</div>
                     </div>
                 </div>
-                <div class="catalog__card">
+                <div data-wow-delay="200ms" class="catalog__card animate__fadeInUp animate__animated wow">
                     <div class="catalog__card-content">
                         <img src="img/png/card_img.png" alt="" class="catalog__card-img">
                         <div class="catalog__card-title">Пульсометр Suunto M2</div>
@@ -226,7 +227,7 @@
                         <div class="button button_catalog-card"data-modal="order">купить</div>
                     </div>
                 </div>
-                <div class="catalog__card">
+                <div data-wow-delay="300ms" class="catalog__card animate__fadeInUp animate__animated wow">
                     <div class="catalog__card-content">
                         <img src="img/png/card_img.png" alt="" class="catalog__card-img">
                         <div class="catalog__card-title">Пульсометр Polar FT4</div>
@@ -268,7 +269,7 @@
                         <div class="button button_catalog-card"data-modal="order">купить</div>
                     </div>
                 </div>
-                <div class="catalog__card">
+                <div data-wow-delay="400ms" class="catalog__card  animate__fadeInUp animate__animated wow">
                     <div class="catalog__card-content">
                         <img src="img/png/card_img.png" alt="" class="catalog__card-img">
                         <div class="catalog__card-title">Пульсометр Polar FT1</div>
@@ -311,7 +312,7 @@
                         <div class="button button_catalog-card"data-modal="order">купить</div>
                     </div>
                 </div>
-                <div class="catalog__card">
+                <div data-wow-delay="500ms" class="catalog__card animate__fadeInUp animate__animated wow">
                     <div class="catalog__card-content">
                         <img src="img/png/card_img.png" alt="" class="catalog__card-img">
                         <div class="catalog__card-title">Пульсометр Suunto M2</div>
@@ -354,7 +355,7 @@
                         <div class="button button_catalog-card"data-modal="order">купить</div>
                     </div>
                 </div>
-                <div class="catalog__card">
+                <div data-wow-delay="600ms" class="catalog__card animate__fadeInUp animate__animated wow">
                     <div class="catalog__card-content">
                         <img src="img/png/card_img.png" alt="" class="catalog__card-img">
                         <div class="catalog__card-title">Пульсометр Polar FT4</div>
@@ -398,7 +399,7 @@
                 </div>
             </div>
             <div class="catalog__cards catalog__cards-run">
-                <div class="catalog__card">
+                <div  class="catalog__card animate__fadeInUp animate__animated">
                     <div class="catalog__card-content">
                         <img src="img/png/card_img.png" alt="" class="catalog__card-img">
                         <div class="catalog__card-title">Пульсометр Polar FT1</div>
@@ -441,7 +442,7 @@
                         <div class="button button_catalog-card"data-modal="order">купить</div>
                     </div>
                 </div>
-                <div class="catalog__card">
+                <div class="catalog__card animate__fadeInUp animate__animated ">
                     <div class="catalog__card-content">
                         <img src="img/png/card_img.png" alt="" class="catalog__card-img">
                         <div class="catalog__card-title">Пульсометр Suunto M2</div>
@@ -484,7 +485,7 @@
                         <div class="button button_catalog-card"data-modal="order">купить</div>
                     </div>
                 </div>
-                <div class="catalog__card">
+                <div  class="catalog__card animate__fadeInUp animate__animated ">
                     <div class="catalog__card-content">
                         <img src="img/png/card_img.png" alt="" class="catalog__card-img">
                         <div class="catalog__card-title">Пульсометр Polar FT4</div>
@@ -526,7 +527,7 @@
                         <div class="button button_catalog-card"data-modal="order">купить</div>
                     </div>
                 </div>
-                <div class="catalog__card">
+                <div class="catalog__card animate__fadeInUp animate__animated ">
                     <div class="catalog__card-content">
                         <img src="img/png/card_img.png" alt="" class="catalog__card-img">
                         <div class="catalog__card-title">Пульсометр Polar FT1</div>
@@ -569,7 +570,7 @@
                         <div class="button button_catalog-card"data-modal="order">купить</div>
                     </div>
                 </div>
-                <div class="catalog__card">
+                <div  class="catalog__card animate__fadeInUp animate__animated ">
                     <div class="catalog__card-content">
                         <img src="img/png/card_img.png" alt="" class="catalog__card-img">
                         <div class="catalog__card-title">Пульсометр Suunto M2</div>
@@ -612,7 +613,7 @@
                         <div class="button button_catalog-card"data-modal="order">купить</div>
                     </div>
                 </div>
-                <div class="catalog__card">
+                <div  class="catalog__card animate__fadeInUp animate__animated ">
                     <div class="catalog__card-content">
                         <img src="img/png/card_img.png" alt="" class="catalog__card-img">
                         <div class="catalog__card-title">Пульсометр Polar FT4</div>
@@ -656,7 +657,7 @@
                 </div>
             </div>
             <div class="catalog__cards catalog__cards-triathlon">
-                <div class="catalog__card">
+                <div  class="catalog__card animate__fadeInUp animate__animated ">
                     <div class="catalog__card-content">
                         <img src="img/png/card_img.png" alt="" class="catalog__card-img">
                         <div class="catalog__card-title">Пульсометр Polar FT1</div>
@@ -699,7 +700,7 @@
                         <div class="button button_catalog-card"data-modal="order">купить</div>
                     </div>
                 </div>
-                <div class="catalog__card">
+                <div  class="catalog__card animate__fadeInUp animate__animated ">
                     <div class="catalog__card-content">
                         <img src="img/png/card_img.png" alt="" class="catalog__card-img">
                         <div class="catalog__card-title">Пульсометр Suunto M2</div>
@@ -742,7 +743,7 @@
                         <div class="button button_catalog-card"data-modal="order">купить</div>
                     </div>
                 </div>
-                <div class="catalog__card">
+                <div  class="catalog__card animate__fadeInUp animate__animated ">
                     <div class="catalog__card-content">
                         <img src="img/png/card_img.png" alt="" class="catalog__card-img">
                         <div class="catalog__card-title">Пульсометр Polar FT4</div>
@@ -784,7 +785,7 @@
                         <div class="button button_catalog-card"data-modal="order">купить</div>
                     </div>
                 </div>
-                <div class="catalog__card">
+                <div class="catalog__card animate__fadeInUp animate__animated ">
                     <div class="catalog__card-content">
                         <img src="img/png/card_img.png" alt="" class="catalog__card-img">
                         <div class="catalog__card-title">Пульсометр Polar FT1</div>
@@ -827,7 +828,7 @@
                         <div class="button button_catalog-card"data-modal="order">купить</div>
                     </div>
                 </div>
-                <div class="catalog__card">
+                <div class="catalog__card animate__fadeInUp animate__animated ">
                     <div class="catalog__card-content">
                         <img src="img/png/card_img.png" alt="" class="catalog__card-img">
                         <div class="catalog__card-title">Пульсометр Suunto M2</div>
@@ -871,7 +872,7 @@
                         <div class="button button_catalog-card"data-modal="order">купить</div>
                     </div>
                 </div>
-                <div class="catalog__card">
+                <div  class="catalog__card animate__fadeInUp animate__animated ">
                     <div class="catalog__card-content">
                         <img src="img/png/card_img.png" alt="" class="catalog__card-img">
                         <div class="catalog__card-title">Пульсометр Polar FT4</div>
@@ -923,7 +924,7 @@
             <h2 class="title title_comments">
                 отзывы клиентов
             </h2>
-            <div class="comments__content">
+            <div data-wow-delay="100ms" class="comments__content wow animate__bounceInLeft animate__animated">
                 <img src="img/png/comments/userpic1.png" class="comments__img"></img>
                 <div class="comments__name">Ирина Иванченко</div>
                 <div class="comments__progress">2 полумарафона</div>
@@ -934,7 +935,7 @@
                     - новый гаджет! <br><br>Спасибо, RunSmart!
                 </div>
             </div>
-            <div class="comments__content">
+            <div data-wow-delay="200ms"  class="comments__content wow animate__bounceInLeft animate__animated">
                 <img src="img/png/comments/userpic2.png" class="comments__img"></img>
                 <div class="comments__name">Иван Сёмочкин</div>
                 <div class="comments__progress">1 полумарафона</div>
@@ -946,7 +947,7 @@
                     месяц вперёд. <br><br> С ними подготовился к своему первому полумарафону! Спасибо!!!
                 </div>
             </div>
-            <div class="comments__content">
+            <div data-wow-delay="300ms" class="comments__content wow animate__bounceInLeft animate__animated">
                 <img src="img/png/comments/userpic3.png" class="comments__img"></img>
                 <div class="comments__name">Юлия Дашкина</div>
                 <div class="comments__progress">2 полумарафона</div>
@@ -1026,13 +1027,14 @@
                 в ближайшее время!</div>
         </div>
     </section>
-
+    <a href="#up" id="pageUp" class="page-up__link"><img src="icons/page_up.svg" class="page-up"></a>
 
     <script src="js/carousel.js"></script>
     <script src="js/tabs.js"></script>
     <script src="js/cards.js"></script>
-    <!-- <script src="js/script.js"></script> -->
     <script src="js/modal.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/page_up.js"></script>
 </body>
 
 </html>
